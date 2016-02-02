@@ -12,16 +12,16 @@ The data needed is returned by the checkout/flowers-endpoint factory, this is a 
 
 Feel free to adjust the design, but try to make it **clean and minimal**.
 
-We'll be for things like:
+We'll be looking for things like:
 * A clean and simple solution
 * Done in a standard way
 * Good understanding of where to use libraries and where not to
 
-Bonus point if you feel like this isn't enough:
+Bonus points for:
 * Unit tests
 * Make days starting 23rd December ending 3rd January cost £3.50 more for the first delivery
 
-Simple design (without bonus feature):
+Sample design (minus some form of date picker which is required):
 ![design](http://i.imgur.com/xXDJs0d.png)
 
 ## Setting up the project
