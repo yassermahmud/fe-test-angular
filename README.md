@@ -1,4 +1,4 @@
-## Bloom & Wild technical frontend test
+## Bloom & Wild frontend test
 
 On our checkout we have a pricing calculator that factors in a few things:
 * The bouquet being selected
@@ -6,7 +6,7 @@ On our checkout we have a pricing calculator that factors in a few things:
 * Any extra shipping costs
 * Date of delivery (not pictured below)
 
-Please build a dynamic interface, similar to our current checkout, in Angular (and any other front end libraries or frameworks that you might find useful) that updates its pricing according to your selection.
+Please build a dynamic interface, similar to our [current checkout](https://www.bloomandwild.com/send-flowers), in Angular (and any other front end libraries or frameworks that you might find useful) that updates its pricing according to your selection.
 
 The data needed is returned by the checkout/flowers-endpoint factory, this is a (scalled down) JSON representation of what our API actually returns, the bouquets you need to populate your checkout with are stored in the `collections[0].skus` array, inside each sku you can find pricing information in the `pricings` array (just pluck the pricing object for quantity: 1 and use that) images are inside `default_bouquet` object.
 
