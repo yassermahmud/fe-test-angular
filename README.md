@@ -13,8 +13,8 @@ The data needed is returned by the checkout/flowers-endpoint factory, this is a 
 Feel free to adjust the design, but try to make it **clean and minimal**.
 
 We'll be looking for things like:
-* A clean and simple solution
 * Done in a standard way
+* A clean and simple solution
 * Good understanding of where to use libraries and where not to
 
 Bonus points for:
