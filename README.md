@@ -27,4 +27,4 @@ Sample design (minus some form of date picker which is required):
 ## Setting up the project
 
 `npm install`
-Then to serve it `npm start` and navigate to `http://localhost:8000/app/index.html`, any questions please don't hesitate to ask us!
+Then to serve it `npm start` and navigate to [http://localhost:8000/app/index.html](http://localhost:8000/app/index.html), any questions please don't hesitate to ask us!
