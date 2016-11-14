@@ -18,17 +18,18 @@
       <div id="pricing">
         <div class="pricing-header">PRICING</div>
         <div class="bouquet-size-header">HOW MANY BOUQUET'S?</div>
-        <md-select class="select">
-          <md-option></md-option>
+        <md-select class="select" aria-label="quantity of bouquets" ng-model="data.order.pricingObj">
+          <md-option ng-repeat="pricing in data.selectedFlower.pricings | filter: { order_type: null } | orderBy: 'quantity'" ng-value="pricing">
+          {{ pricing.quantity }}</md-option>
         </md-select> 
 
         <div class="shipping-header">SELECT SHIPPING OPTION</div>
-        <md-select>
-          <md-option></md-option>
+        <md-select class="select" ng-model="data.order.shipmentPrice" placeholder="Select Shipping Option">
+          <md-option ng-repeat="shipment in data.shipping" value="{{ shipment.price }}">{{ shipment.name }}</md-option>
         </md-select>
 
         <div class="delivery-date-header">FIRST DELIVERY DATE</div>
-        <md-datepicker></md-datepicker>
+        <md-datepicker md-min-date="today" class="delivery-date" ng-model="data.order.deliveryDate" md-placeholder="Enter Date"></md-datepicker>
 
         <div id="total">
           <div class="order-heading">ORDER TOTAL</div>
