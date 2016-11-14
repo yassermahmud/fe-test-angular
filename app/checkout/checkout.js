@@ -22,8 +22,10 @@ angular.module('myApp.checkout', ['ngRoute'])
     $scope.data.order.pricingObj = {};
     $anchorScroll('pricing');
   }
-  
 
-
-
+  $scope.calculatePrice = function() {
+    if($scope.data.order.deliveryDate && $scope.data.order.pricingObj.quantity && $scope.data.order.pricingObj.amount && $scope.data.order.shipmentPrice) {
+      $scope.data.order.total = parseFloat($scope.data.order.pricingObj.amount) + parseFloat($scope.data.order.shipmentPrice) * parseInt($scope.data.order.pricingObj.quantity);
+    }
+  }
 }]);
