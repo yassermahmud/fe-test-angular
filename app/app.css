@@ -7,6 +7,24 @@
 .flower-grid md-grid-tile {
   transition: all 400ms ease-out 50ms;
 }
+.header {
+  position: fixed;
+  height: 70px;
+  width: 100%;
+  top: 0;
+  line-height: 70px;
+  border-bottom: 1px solid #ccc;
+  background-color: #fdfdfd;
+  z-index: 1;
+}
+
+.logo-container {
+  text-align: center;
+}
+
+.logo {
+  width: 260px;
+}
 
 .flower-display {
   position: relative;
