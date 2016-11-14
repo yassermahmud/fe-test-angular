@@ -1,5 +1,35 @@
-/* app css stylesheet */
+.flower-grid {
+  margin: 70px;
+  margin-top: 140px;
+  padding-bottom: 0 !important;
+}
 
-.some-class {
-  color: red;
+.flower-grid md-grid-tile {
+  transition: all 400ms ease-out 50ms;
+}
+
+.flower-display {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-size: 100% 100%;
+  cursor: pointer;
+}
+
+.flower-footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.flower-price,
+.flower-name {
+  font-size: 2em;
+  color: rgba(51, 51, 51, 0.5);
+}
+
+.flower-name {
+  font-weight: bold;
 }

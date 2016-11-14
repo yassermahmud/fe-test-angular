@@ -10,6 +10,7 @@ angular.module('myApp.checkout', ['ngRoute'])
 }])
 
 .controller('Checkout', ['$scope', 'FlowersEndpoint', function($scope, FlowersEndpoint) {
-  $scope.checkoutCopy = "This is the partial for checkout, your implementation goes here";
-  console.log(FlowersEndpoint);
+  $scope.data = {};
+  $scope.data.flowers = FlowersEndpoint.collections[0].skus;
+  $scope.data.shipping = FlowersEndpoint.collections[0].shipping_options;
 }]);
