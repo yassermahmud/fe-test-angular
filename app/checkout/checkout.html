@@ -1,1 +1,13 @@
-<p class="some-class">{{checkoutCopy}}</p>
+<div>
+  <md-grid-list class="flower-grid"
+    md-cols-xs="1" md-cols-sm="1" md-cols-md="2" md-cols-gt-md="3"
+    md-row-height="1:1">
+    <md-grid-tile ng-repeat="flower in data.flowers" ng-cloak>
+    </md-grid-tile>
+
+    <md-grid-tile md-colspan-xs="1" md-colspan-sm="1" md-colspan-md="2" md-colspan-gt-md="3" ng-cloak>
+    </md-grid-tile>
+
+  </md-grid-list>
+</div>
+
