@@ -9,8 +9,15 @@ angular.module('myApp.checkout', ['ngRoute'])
   });
 }])
 
-.controller('Checkout', ['$scope', 'FlowersEndpoint', function($scope, FlowersEndpoint) {
+.controller('Checkout', ['$scope', 'FlowersEndpoint', '$anchorScroll', function($scope, FlowersEndpoint, $anchorScroll) {
   $scope.data = {};
   $scope.data.flowers = FlowersEndpoint.collections[0].skus;
   $scope.data.shipping = FlowersEndpoint.collections[0].shipping_options;
+
+  $scope.selectFlower = function(selectedFlower) {
+    $scope.data.selectedFlower = selectedFlower;
+    $scope.data.order = {};
+    $scope.data.order.pricingObj = {};
+    $anchorScroll('pricing');
+  }
 }]);
