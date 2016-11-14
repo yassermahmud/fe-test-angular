@@ -33,3 +33,27 @@
 .flower-name {
   font-weight: bold;
 }
+
+#pricing {
+  text-align: center;
+}
+
+.pricing-header {
+  font-size: 3rem;
+}
+
+.bouquet-size-header,
+.delivery-date-header,
+.shipping-header,
+.order-heading {
+  margin-top: 40px; 
+}
+
+.select {
+  margin-top:5px;
+}
+
+.order-heading,
+.order-total {
+  font-size: 2rem;
+}
